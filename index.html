@@ -1,52 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="listings-style.css">
+    <link rel="stylesheet" href="events-style.css">
+    <link rel="stylesheet" href="reverifi-style.css">
     <title>Figma Practice</title>
 </head>
+
 <body>
-    <header>
-        <div class="menu-container"></div>
-        <div class="header-section section-left">
-            <div class="logo-container"></div>
-            <nav>
-                <ul>
-                  <li><a href="#">How we Work</a></li>
-                  <li><a href="#">Find an Agent</a></li>
-                  <li><a href="#">Knowledge Center</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header-section">
-            <nav>
-                <ul>
-                    <li class="right-li"><a href="#">Sign In</a></li>
-                    <li class="styled-li"><a href="#">Join Now</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="section">
-            <div class="section-container">
-                <div class="heading-search-container">
-                    <div>
-                        <h2>Search our listings for your next purchase</h2>
+    <div class="page-container">
+        <header>
+            <div class="menu-container"></div>
+            <div class="header-section section-left">
+                <div class="logo-container"></div>
+                <nav>
+                    <ul>
+                        <li><a href="#">How we Work</a></li>
+                        <li><a href="#">Find an Agent</a></li>
+                        <li><a href="#">Knowledge Center</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-section">
+                <nav>
+                    <ul>
+                        <li class="right-li"><a href="#">Sign In</a></li>
+                        <li class="styled-li"><a href="#">Join Now</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="section">
+                <div class="section-container">
+                    <div class="heading-search-container">
+                        <div>
+                            <h2>Search our listings for your next purchase</h2>
+                        </div>
+                        <div class="searchbar-container">
+                            <img src="images/location_logo.png" alt="location" width="16px" height="21px"
+                                style="margin-left:14px;">
+                            <input type="text" placeholder="Enter City, neighbourhood, ZIP, or address">
+                            <img class="search-icon" src="images/search_green.png" alt="search_green" height="56px"
+                                width="56px">
+                        </div>
                     </div>
-                    <div class="searchbar-container">
-                        <img src="images/location_logo.png" alt="location" width="16px" height="21px">
-                        <input type="text" placeholder="Enter City, neighbourhood, ZIP, or address">
-                        <img src="images/search_green.png" alt="search_green" height="56px" width="56px">
+                    <div class="home-container"></div>
+                </div>
+            </section>
+            <section class="listings-section">
+                <div class="listings-section-container">
+                    <div class="listing-header-container">
+                        <h3>Our Featured Listing</h3>
+                    </div>
+                    <div class="listings-container">
+                        <div class="listing-container">
+                            <div class="apartment1">
+                                <div class="status">New</div>
+                                <div class="dork"></div>
+                            </div>
+                            <div class="listing-info">
+                                <div class="upper-listing">
+                                    <div class="ap-name-address">
+                                        <h4>Apartment#1</h4>
+                                        <p>Bronx, NY 10459</p>
+                                        <div class="conditions">
+                                            <img src="images/two_bedrooms_icon.png" alt="two bedrooms">
+                                            <img src="images/wifi_icon.png" alt="wifi">
+                                            <img src="images/one_bathroom_icon.png" alt="one bathroom">
+                                            <img src="images/air_conditioning_icon.png" alt="air_conditioning">
+                                            <img src="images/bench_icon.png" alt="bench">
+                                        </div>
+                                    </div>
+                                    <div class="listing-location">
+                                        <img src="images/location_logo.png" alt="location" width="7.5px" height="10px">
+                                        <p>1.1km away</p>
+                                    </div>
+                                </div>
+                                <div class="lower-listing">
+                                    <div class="price-tag">$30,000</div>
+                                    <div class="like-share">
+                                        <img src="images/like_icon.png" alt="like" width="24px" height="24px">
+                                        <img src="images/share_icon.png" alt="share" width="24px" height="24px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-container tablet-hide">
+                            <div class="apartment1">
+                                <div class="status">New</div>
+                                <div class="dork"></div>
+                            </div>
+                            <div class="listing-info">
+                                <div class="upper-listing">
+                                    <div class="ap-name-address">
+                                        <h4>Apartment#1</h4>
+                                        <p>Bronx, NY 10459</p>
+                                        <div class="conditions">
+                                            <img src="images/two_bedrooms_icon.png" alt="two bedrooms">
+                                            <img src="images/wifi_icon.png" alt="wifi">
+                                            <img src="images/one_bathroom_icon.png" alt="one bathroom">
+                                            <img src="images/air_conditioning_icon.png" alt="air_conditioning">
+                                            <img src="images/bench_icon.png" alt="bench">
+                                        </div>
+                                    </div>
+                                    <div class="listing-location">
+                                        <img src="images/location_logo.png" alt="location" width="7.5px" height="10px">
+                                        <p>1.1km away</p>
+                                    </div>
+                                </div>
+                                <div class="lower-listing">
+                                    <div class="price-tag">$30,000</div>
+                                    <div class="like-share">
+                                        <img src="images/like_icon.png" alt="like" width="24px" height="24px">
+                                        <img src="images/share_icon.png" alt="share" width="24px" height="24px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-container phone-hide">
+                            <div class="apartment1">
+                                <div class="status">New</div>
+                                <div class="dork"></div>
+                            </div>
+                            <div class="listing-info">
+                                <div class="upper-listing">
+                                    <div class="ap-name-address">
+                                        <h4>Apartment#1</h4>
+                                        <p>Bronx, NY 10459</p>
+                                        <div class="conditions">
+                                            <img src="images/two_bedrooms_icon.png" alt="two bedrooms">
+                                            <img src="images/wifi_icon.png" alt="wifi">
+                                            <img src="images/one_bathroom_icon.png" alt="one bathroom">
+                                            <img src="images/air_conditioning_icon.png" alt="air_conditioning">
+                                            <img src="images/bench_icon.png" alt="bench">
+                                        </div>
+                                    </div>
+                                    <div class="listing-location">
+                                        <img src="images/location_logo.png" alt="location" width="7.5px" height="10px">
+                                        <p>1.1km away</p>
+                                    </div>
+                                </div>
+                                <div class="lower-listing">
+                                    <div class="price-tag">$30,000</div>
+                                    <div class="like-share">
+                                        <img src="images/like_icon.png" alt="like" width="24px" height="24px">
+                                        <img src="images/share_icon.png" alt="share" width="24px" height="24px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots">
+                        <img src="images/dots.png" alt="dots">
                     </div>
                 </div>
-                <div class="home-container"></div>
-            </div>
-        </section>
-    </main>
-    <footer>
+            </section>
+            <section class="section">
+                <div class="events-section">
+                    <div class="events-header-container">
+                        <h3>Events</h3>
+                    </div>
+                    <div class="time-container">
+                        <p class="styled-filter">All</p>
+                        <p>Upcoming</p>
+                        <p>Past</p>
+                    </div>
+                    <div class="events-container">
+                        <div class="arrow-left">
+                            <img src="images/arrow_left.png" alt="arrow left">
+                        </div>
+                        <div class="event-box">
+                            <div class="event-upper">
+                                <div class="event-type">Personal</div>
+                                <div class="event-date">
+                                    <p class="event-day">08</p>
+                                    <p class="event-month">OCT</p>
+                                </div>
+                            </div>
+                            <div class="event-lower">
+                                <div class="event-info">
+                                    <h4>Lorem ipsum</h4>
+                                    <p>7:30 - 10:30PM @someplace</p>
+                                </div>
+                                <div class="actions">
+                                    <img src="images/plus_icon.png" alt="plus">
+                                    <img src="images/share_icon.png" alt="share">
+                                </div>
+                                <div class="people-count">
+                                    <img src="images/people_count.png" alt="people count">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-box desktop-hide">
+                            <div class="event-upper">
+                                <div class="event-type">Personal</div>
+                                <div class="event-date">
+                                    <p class="event-day">08</p>
+                                    <p class="event-month">OCT</p>
+                                </div>
+                            </div>
+                            <div class="event-lower">
+                                <div class="event-info">
+                                    <h4>Lorem ipsum</h4>
+                                    <p>7:30 - 10:30PM @someplace</p>
+                                </div>
+                                <div class="actions">
+                                    <img src="images/plus_icon.png" alt="plus">
+                                    <img src="images/share_icon.png" alt="share">
+                                </div>
+                                <div class="people-count">
+                                    <img src="images/people_count.png" alt="people count">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-box  event-tablet-hide">
+                            <div class="event-upper">
+                                <div class="event-type">Personal</div>
+                                <div class="event-date">
+                                    <p class="event-day">08</p>
+                                    <p class="event-month">OCT</p>
+                                </div>
+                            </div>
+                            <div class="event-lower">
+                                <div class="event-info">
+                                    <h4>Lorem ipsum</h4>
+                                    <p>7:30 - 10:30PM @someplace</p>
+                                </div>
+                                <div class="actions">
+                                    <img src="images/plus_icon.png" alt="plus">
+                                    <img src="images/share_icon.png" alt="share">
+                                </div>
+                                <div class="people-count">
+                                    <img src="images/people_count.png" alt="people count">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-box event-phone-hide">
+                            <div class="event-upper">
+                                <div class="event-type">Personal</div>
+                                <div class="event-date">
+                                    <p class="event-day">08</p>
+                                    <p class="event-month">OCT</p>
+                                </div>
+                            </div>
+                            <div class="event-lower">
+                                <div class="event-info">
+                                    <h4>Lorem ipsum</h4>
+                                    <p>7:30 - 10:30PM @someplace</p>
+                                </div>
+                                <div class="actions">
+                                    <img src="images/plus_icon.png" alt="plus">
+                                    <img src="images/share_icon.png" alt="share">
+                                </div>
+                                <div class="people-count">
+                                    <img src="images/people_count.png" alt="people count">
+                                </div>
+                            </div>
+                        </div>
 
-    </footer>
+                        <div class="arrow-right">
+                            <img src="images/arrow-right.png" alt="arrow right">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="reverifi-section">
+                    <div class="reverifi-info">
+                        <h4 class="reverifi-heading">reverifi<span class="plus-sign">+</span></h4>
+                        <p class="styled-paragraph">Search our networks and find your supporting team to complete the
+                            process</p>
+                        <button class="button-see-more">See More</button>
+                    </div>
+                    <div class="support-items">
+                        <div class="support-box">
+                            <img src="images/attorney_icon.png" width="32" alt="attourney">
+                            <p class="support-text">Attourney</p>
+                        </div>
+                        <div class="support-box">
+                            <img src="images/attorney_icon.png" width="32" alt="attourney">
+                            <p class="support-text">Photographer</p>
+                        </div>
+                        <div class="support-box">
+                            <img src="images/attorney_icon.png" width="32" alt="attourney">
+                            <p class="support-text">Agent</p>
+                        </div>
+                        <div class="support-box">
+                            <img src="images/attorney_icon.png" width="32" alt="attourney">
+                            <p class="support-text">Cleaning Services</p>
+                        </div>
+                        <div class="support-box">
+                            <img src="images/attorney_icon.png" width="32" alt="attourney">
+                            <p class="support-text">Home Inspectors</p>
+                        </div>
+                        <div class="support-box">
+                            <img src="images/attorney_icon.png" width="32" alt="attourney">
+                            <p class="support-text">Insurance Provider</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
 </body>
+
 </html>

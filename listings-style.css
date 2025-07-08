@@ -1,0 +1,131 @@
+.listings-section-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.listings-container{
+    display:flex;
+    gap: clamp(16px, 4vw, 50px);
+}
+
+.listing-header-container{
+    margin-bottom:32px;
+}
+
+.listing-header-container h3{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+h4{
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0px;
+}
+
+.ap-name-address p{
+    opacity: 50%;
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+
+.ap-name-address{
+    margin-left:15px;
+}
+
+.apartment1{
+    background-image: url(images/Apartment1.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    width: 380px;
+    height: 185px;
+    position:relative;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+.apartment1 .status{
+    left: 16px;
+    top: 16px;
+    padding: 4px 19px;
+    position: absolute;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 0px;
+    background-color: #FE5D26;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.dork{
+    border-radius:50%;
+    background-image:url(images/dork.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+}
+
+.listing-info{
+    margin-top: 8px;
+}
+
+.upper-listing{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.conditions{
+    display:flex;
+    gap:15px;
+}
+
+.listing-location p{
+    opacity: 50%;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 100%;   
+    color: #222222;
+}
+
+.listing-location{
+    display:flex;
+    gap: 8px;
+    margin-right:15px;
+}
+
+.lower-listing{
+    display:flex;
+    justify-content: space-between;
+    margin:15px;
+}
+
+.price-tag{
+    font-weight:600;
+    font-size: 18px;
+    letter-spacing: 0px;
+}
+
+
+@media (max-width:1320px){
+    .tablet-hide{
+        display: none;
+    }
+}
+
+@media (max-width: 850px){
+    .phone-hide{
+        display: none;
+    }
+}
