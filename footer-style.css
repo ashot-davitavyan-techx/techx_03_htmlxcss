@@ -1,0 +1,132 @@
+.footer-container {
+    padding-top: 32px;
+    background: #F5F5F5;
+}
+
+.lower-footer {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+    background: #222222;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.styled-logo {
+    margin-bottom: 15px;
+}
+
+.upper-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.round-button {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+}
+
+.links-container {
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    margin-top: 32px;
+    margin-bottom: 40px;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.styled-heading {
+    color: #B2D235;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom:30px;
+}
+
+.styled-link {
+    color: #6F7076;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-bottom: 14px;
+}
+
+.link-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 7.5px;
+}
+
+.contact div {
+    display: flex;
+    align-items: center;
+}
+
+.facebook-button {
+    background-image: url(images/facebook-icon.png);
+}
+
+.instagram-button {
+    background-image: url(images/instagram-icon.png);
+}
+
+.youtube-button {
+    background-image: url(images/youtube-icon.png);
+}
+
+.linkedin-button {
+    background-image: url(images/linkedin-icon.png);
+}
+
+.subscription-field{
+    width:fit-content;
+    border-radius: 28px;
+    background: #FFFFFF;
+
+}
+
+.styled-button {
+    border-radius: 28px;
+    padding: 11px 28px;
+    background: #B2D235;
+    color:#FFFFFF;
+    border: none;
+}
+
+.styled-input {
+    padding: 11px 15px;
+    border: none;
+    border-radius: 28px;
+}
+
+.styled-input::placeholder{
+    font-weight:400;
+    font-size:12px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+@media(max-width:768px){
+    .links-container{
+        flex-direction: column;
+        padding-left:15px;
+    }
+}

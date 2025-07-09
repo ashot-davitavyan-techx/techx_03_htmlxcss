@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="listings-style.css">
     <link rel="stylesheet" href="events-style.css">
     <link rel="stylesheet" href="reverifi-style.css">
+    <link rel="stylesheet" href="listings-exploring-style.css">
+    <link rel="stylesheet" href="address-claim-section-style.css">
+    <link rel="stylesheet" href="join-us-section-style.css">
+    <link rel="stylesheet" href="footer-style.css">
     <title>Figma Practice</title>
 </head>
 
@@ -42,9 +46,10 @@
                             <h2>Search our listings for your next purchase</h2>
                         </div>
                         <div class="searchbar-container">
-                            <img src="images/location_logo.png" alt="location" width="16px" height="21px"
+                            <img src="images/location_icon.png" alt="location" width="16px" height="21px"
                                 style="margin-left:14px;">
-                            <input type="text" placeholder="Enter City, neighbourhood, ZIP, or address">
+                            <input class="styled-searchbar" type="text"
+                                placeholder="Enter City, neighbourhood, ZIP, or address">
                             <img class="search-icon" src="images/search_green.png" alt="search_green" height="56px"
                                 width="56px">
                         </div>
@@ -77,7 +82,7 @@
                                         </div>
                                     </div>
                                     <div class="listing-location">
-                                        <img src="images/location_logo.png" alt="location" width="7.5px" height="10px">
+                                        <img src="images/location_icon.png" alt="location" width="7.5px" height="10px">
                                         <p>1.1km away</p>
                                     </div>
                                 </div>
@@ -109,7 +114,7 @@
                                         </div>
                                     </div>
                                     <div class="listing-location">
-                                        <img src="images/location_logo.png" alt="location" width="7.5px" height="10px">
+                                        <img src="images/location_icon.png" alt="location" width="7.5px" height="10px">
                                         <p>1.1km away</p>
                                     </div>
                                 </div>
@@ -141,7 +146,7 @@
                                         </div>
                                     </div>
                                     <div class="listing-location">
-                                        <img src="images/location_logo.png" alt="location" width="7.5px" height="10px">
+                                        <img src="images/location_icon.png" alt="location" width="7.5px" height="10px">
                                         <p>1.1km away</p>
                                     </div>
                                 </div>
@@ -305,9 +310,153 @@
                     </div>
                 </div>
             </section>
-        </main>
-        <footer>
+            <section>
+                <div class="listings-exploring-section">
+                    <div class="listings-exploring-header">
+                        <h3>Explore our Listings</h3>
+                    </div>
+                    <div class="listings-grid">
+                        <div class="listing-big">
+                            <div class="listing-information">
+                                <h4>New York</h4>
+                                <p><span class="styled-number">2</span> Listings</p>
+                            </div>
+                            <div class="listing-dots">
+                                <img src="images/listing-dots.png" width="140px" height="12px" alt="listing dots">
+                            </div>
+                            <div class="listing-overlay"></div>
+                        </div>
+                        <div class="listing-small">
+                            <div class="listing-information">
+                                <h4>New York</h4>
+                                <p><span class="styled-number">2</span> Listings</p>
+                            </div>
+                            <div class="listing-overlay"></div>
+                        </div>
+                        <div class="listing-small">
+                            <div class="listing-information">
+                                <h4>New York</h4>
+                                <p><span class="styled-number">2</span> Listings</p>
+                            </div>
+                            <div class="listing-overlay"></div>
+                        </div>
+                        <div class="listing-small">
+                            <div class="listing-information">
+                                <h4>New York</h4>
+                                <p><span class="styled-number">2</span> Listings</p>
+                            </div>
+                            <div class="listing-overlay"></div>
+                        </div>
+                        <div class="listing-small">
+                            <div class="listing-information">
+                                <h4>New York</h4>
+                                <p><span class="styled-number">2</span> Listings</p>
+                            </div>
+                            <div class="listing-overlay"></div>
+                        </div>
+                        <div class="listing-small">
+                            <div class="listing-information">
+                                <h4>New York</h4>
+                                <p><span class="styled-number">2</span> Listings</p>
+                            </div>
+                            <div class="listing-overlay"></div>
+                        </div>
+                        <div class="listing-small">
+                            <div class="listing-information">
+                                <h4>New York</h4>
+                                <p><span class="styled-number">2</span> Listings</p>
+                            </div>
+                            <div class="listing-overlay"></div>
+                        </div>
+                    </div>
+                </div>
 
+            </section>
+            <section>
+                <div class="address-claim-section">
+                    <div class="address-claim-form">
+                        <h3 class="address-claim-heading">Claim your Address</h3>
+                        <div class="searchbar-container">
+                            <img src="images/location_icon.png" alt="location" width="16px" height="21px"
+                                style="margin-left:14px;">
+                            <input class="styled-searchbar" type="text" placeholder="Enter your Address">
+                            <img class="search-icon" src="images/search_green.png" alt="search_green" height="48px"
+                                width="48px">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="join-us-section">
+                    <div class="join-us-box">
+                        <div class="content-left">
+                            <p>Start your real estate journey with</p>
+                            <img src="images/company_logo_2.png" alt="company_logo" width="76px" height="38px">
+                        </div>
+                        <div class="content-right">
+                            <button class="join-us-button">Join us</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="upper-footer">
+                    <div class="social-links">
+                        <button class="round-button facebook-button"></button>
+                        <button class="round-button instagram-button"></button>
+                        <button class="round-button youtube-button"></button>
+                        <button class="round-button linkedin-button"></button>
+                    </div>
+                    <div class="links-container">
+                        <div class="contact">
+                            <img class="styled-logo" src="images/company_logo_1.png" alt="company logo" width="120px" height="60px">
+                            <div>
+                                <div class="company-location">
+                                    <img src="images/location_icon_green.png" alt="location logo green" width="13px" height="16px">
+                                    <p class="footer-paragraph">712-427-1242</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="support">
+                                    <img src="images/mail_icon_green.png" alt="mail" width="16px" height="10px">
+                                    <p class="footer-paragraph">support@example.com</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="company-phone">
+                                    <img src="images/phone_icon_green.png" alt="phone" width="16px" height="16px">
+                                    <p class="footer-paragraph">319-764-9876</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link-box">
+                            <h5 class="styled-heading">Helpful Links</h5>
+                            <a class="styled-link" href="#">Sign in</a>
+                            <a class="styled-link" href="#">Support</a>
+                            <a class="styled-link" href="#">FAQ's</a>
+                        </div>
+                        <div class="link-box">
+                            <h5 class="styled-heading">Company</h5>
+                            <a class="styled-link" href="#">About us</a>
+                            <a class="styled-link" href="#">Privacy</a>
+                            <a class="styled-link" href="#">Terms of Use</a>
+                            <a class="styled-link" href="#">Accessibility</a>
+                        </div>
+                        <div class="newsletter-subscribe">
+                            <h5 class="styled-heading">Subscribe to our Newsletter</h5>
+                            <div class="subscription-field">
+                                <input class="styled-input" type="email" placeholder="Subscribe to our Newsletter">
+                                <button class="styled-button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lower-footer">
+                    <p>Copyright © 2021 Reverifi. All rights reserved</p>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
