@@ -1,139 +1,173 @@
-.events-section{
-    display:flex;
+.events-section {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.events-container{
-    display:flex;
-    gap: clamp(16px, 2vw, 52px);
-    position:relative;
+.events-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
-.events-header-container{
-    margin-bottom:12px;
+.events-header-container {
+    margin-bottom: 12px;
 }
 
-.arrow-left{
-    position:absolute;
-    left:-17px;
+.arrow-left {
+    position: absolute;
+    left: -17px;
     top: 45%;
     z-index: 1;
 }
 
-.arrow-right{
-    position:absolute;
-    right:-17px;
+.arrow-right {
+    position: absolute;
+    right: -17px;
     top: 45%;
     z-index: 1;
 }
 
-.event-box{
-    display:flex;
+.event-box {
+    display: flex;
     flex-direction: column;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
+    width: clamp(230px, 22.5vw, 320px);
 }
 
-.time-container{
+.time-container {
     display: flex;
     flex-direction: row;
-    gap:36px;
-    margin-bottom:32px;
+    gap: 36px;
+    margin-bottom: 32px;
 }
 
-.styled-filter{
+.styled-filter {
     color: #B2D235;
     border-bottom: 1px solid #B2D235;
     opacity: 100% !important;
-    font-size:16px;
+    font-size: 16px;
 }
 
-.time-container p{
+.time-container p {
     font-size: 16px;
     opacity: 50%;
 }
 
-.event-type{
+.event-type {
     background: #FE5D26;
     border-radius: 4px;
     color: #FFFFFF;
-    font-size:10px;
+    font-size: 10px;
     font-weight: 400;
     letter-spacing: 0px;
-    padding:5px 10px;
+    padding: 5px 10px;
     position: absolute;
-    left:16px;
+    left: 16px;
     top: 16px;
 }
 
-.event-date{
+.event-date {
     background: #B2D235;
     position: absolute;
-    right:15px;
+    right: 15px;
     border-radius: 3px;
-    font-size: 22px;
-    color:#FFFFFF;
+    font-size: clamp(16px, 2vw, 22px);
+    color: #FFFFFF;
     text-align: center;
-    padding:4px 12px 5px 12px;
+    padding: 4px 12px 5px 12px;
 }
 
-.event-month{
-    font-size:18px;
+.event-month {
+    font-size: clamp(12px, 1.5vw, 18px);
 }
 
-.event-upper{
+.event-upper {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    display:flex;
+    display: flex;
     position: relative;
     background-image: url(images/event_image_1.png);
     background-size: cover;
-    background-repeat:no-repeat;
-    background-position:center;
-    width: 320px;
-    height: 230px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: clamp(230px, 22.5vw, 320px);
+    aspect-ratio: 320/230;
 }
 
-.event-lower{
+.actions{
     display:flex;
+    gap:8px
+}
+
+.event-lower {
+    display: flex;
     padding: 15px 16px 30px 16px;
     justify-content: space-between;
-    position:relative;
+    position: relative;
 }
 
-.people-count{
-    position:absolute;
-    bottom:16px;
-    right:16px;
+.people-count {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
 }
 
-.event-info h4{
-    font-size: 16px;
-    font-weight:400;
+.event-info h4 {
+    font-size: clamp(12px, 1.5vw, 16px);
+    font-weight: 400;
 }
 
-.event-info p{
+.event-info p {
     opacity: 50%;
     font-size: 12px;
 }
 
-@media(max-width:1400px){
-    .desktop-hide{
-        display: none   ;
+@media(max-width:1024px) {
+    .event-tablet-hide-first {
+        display: none;
+    }
+
+    .event-box {
+        width: clamp(200px, 27vw, 300px);
+    }
+
+    .event-upper {
+        width: clamp(200px, 27vw, 300px);
     }
 }
 
-@media(max-width:1074px){
-    .event-tablet-hide{
-        display:none;
+@media(max-width:768px) {
+    .event-tablet-hide-second {
+        display: none;
+    }
+
+    .event-box {
+        width: clamp(170px, 40vw, 300px);
+    }
+
+    .event-upper {
+        width: clamp(170px, 40vw, 300px);
     }
 }
 
-@media(max-width:724px){
-    .event-phone-hide{
-        display:none;
+@media(max-width:425px) {
+    .event-phone-hide {
+        display: none;
+    }
+
+    .event-box {
+        width: 100%;
+    }
+
+    .event-upper {
+        width: 100%;
+    }
+
+    .events-container {
+        width: 100%;
     }
 }
-

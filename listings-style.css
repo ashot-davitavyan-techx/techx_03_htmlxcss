@@ -1,54 +1,58 @@
-.listings-section-container{
-    display:flex;
-    flex-direction:column;
+:root {
+    --primary-box-vw: 27vw;
+    --secondary-box-vw: 40vw;
+}
+
+.listings-section-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 32px 0;
 }
 
-.listings-container{
-    display:flex;
-    gap: clamp(16px, 4vw, 50px);
+.listings-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
 }
 
-.listing-header-container{
-    margin-bottom:32px;
+.listing-header-container {
+    margin-bottom: 32px;
 }
 
-.listing-header-container h3{
-    font-size: 32px;
+.styled-h4 {
     font-weight: 600;
+    font-size: clamp(12px, 2vw, 18px);
     letter-spacing: 0px;
 }
 
-h4{
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 0px;
-}
-
-.ap-name-address p{
+.ap-name-address p {
     opacity: 50%;
-    font-size: 14px;
+    font-size: clamp(10px, 1.5vw, 14px);
     letter-spacing: 0px;
 }
 
-.ap-name-address{
-    margin-left:15px;
+.ap-name-address {
+    margin-left: 15px;
 }
 
-.apartment1{
+.listing-container {
+    width: clamp(190px, var(--primary-box-vw), 380px);
+}
+
+.apartment1 {
     background-image: url(images/Apartment1.png);
     background-size: cover;
-    background-repeat:no-repeat;
-    background-position:center;
-    width: 380px;
-    height: 185px;
-    position:relative;
-    border-top-left-radius:5px;
-    border-top-right-radius:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: clamp(190px, var(--primary-box-vw), 380px);
+    aspect-ratio: 380/185;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-.apartment1 .status{
+.apartment1 .status {
     left: 16px;
     top: 16px;
     padding: 4px 19px;
@@ -61,71 +65,131 @@ h4{
     color: #FFFFFF;
 }
 
-.dork{
-    border-radius:50%;
-    background-image:url(images/dork.png);
+.dork {
+    border-radius: 50%;
+    background-image: url(images/dork.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position:absolute;
+    position: absolute;
     bottom: 16px;
     right: 16px;
     width: 40px;
     height: 40px;
 }
 
-.listing-info{
+.listing-info {
     margin-top: 8px;
 }
 
-.upper-listing{
-    display:flex;
-    flex-direction:row;
+.upper-listing {
+    display: flex;
+    position: relative;
+    flex-direction: row;
     justify-content: space-between;
     padding-bottom: 8px;
     border-bottom: 1px solid #D8D8D8;
 }
 
-.conditions{
-    display:flex;
-    gap:15px;
+.conditions {
+    display: flex;
+    gap: 15px;
 }
 
-.listing-location p{
+.listing-location {
+    display: flex;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    gap: 8px;
+}
+
+.listing-location p {
     opacity: 50%;
     font-size: 12px;
     letter-spacing: 0px;
-    line-height: 100%;   
+    line-height: 100%;
     color: #222222;
 }
 
-.listing-location{
-    display:flex;
-    gap: 8px;
-    margin-right:15px;
-}
-
-.lower-listing{
-    display:flex;
+.lower-listing {
+    display: flex;
     justify-content: space-between;
-    margin:15px;
+    margin: 15px;
 }
 
-.price-tag{
-    font-weight:600;
-    font-size: 18px;
+.price-tag {
+    font-weight: 600;
+    font-size: clamp(12px, 2vw, 18px);
     letter-spacing: 0px;
 }
 
-
-@media (max-width:1320px){
-    .tablet-hide{
+@media (max-width: 768px) {
+    .tablet-hide {
         display: none;
+    }
+
+    .styled-h4 {
+        font-size: clamp(12px, 3vw, 18px);
+    }
+
+    .ap-name-address p {
+        font-size: clamp(10px, 2vw, 14px);
+    }
+
+
+    .apartment1 .status {
+        padding: 2px 15px;
+        font-size: 9px;
+    }
+
+    .price-tag {
+        font-size: clamp(12px, 3vw, 18px);
+    }
+
+    .listing-container {
+        width: clamp(185px, var(--secondary-box-vw), 380px);
+    }
+
+    .apartment1 {
+        width: clamp(185px, var(--secondary-box-vw), 380px);
     }
 }
 
-@media (max-width: 850px){
-    .phone-hide{
+@media (max-width: 425px) {
+
+    .apartment1 .status {
+        padding: 4px 18px;
+        font-size: 10px;
+    }
+
+    .phone-hide {
         display: none;
     }
+
+    .listing-container {
+        width: 100%;
+    }
+
+    .apartment1 {
+        width: 100%;
+    }
+
+    .apartment1 .status {
+        padding: 4px 18px;
+        font-size: 9px;
+    }
+
+    .price-tag {
+        font-size: 18px;
+    }
+
+    .styled-h4 {
+        font-size:18px;
+    }
+
+    .ap-name-address p {
+        font-size: 14px;
+    }
+
 }

@@ -1,87 +1,77 @@
-.plus-sign{
-    color:#B2D235;
+.plus-sign {
+    color: #B2D235;
 }
 
-.reverifi-info{
-    display:flex;
+.reverifi-info {
+    display: flex;
     flex-direction: column;
-    gap:16px;
-    width:40%;
+    gap: 16px;
+    width: 40%;
 }
 
-.reverifi-section{
-    display:flex;
-    justify-content: space-between;
-    padding:58px clamp(40px, 2vw, 100px);
+.scalable-paragraph {
+    font-size: clamp(12px, 1.7vw, 18px);
 }
 
-.support-items{
-    display:grid;
+.reverifi-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.support-items {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
+    gap: 5px;
+    width: 50%;
 }
 
-.support-box{
-    display:flex;
+.support-box {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 clamp(10px, 2vw, 30px);
-    gap:10px;
+    gap: 10px;
 }
 
-.support-text{
-    text-wrap: nowrap;
+.support-text {
+    text-align: center;
+    font-size: clamp(12px, 1.7vw, 18px);
 }
 
-.reverifi-heading{
-    font-size:32px;
-    font-weight:600;
+.reverifi-heading {
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 600;
 }
 
-.button-see-more{
+.button-see-more {
     border-radius: 20px;
-    font-size:16px;
+    font-size: clamp(10px, 1.5vw, 16px);
     color: #FFFFFF;
     padding: 10px 20px;
     background-color: #B2D235;
     border: none;
-    margin-top:16px;
-    width:fit-content
+    margin-top: 16px;
+    width: fit-content
 }
 
-
-@media(max-width:1284px){
-    .reverifi-section{
-        gap:20px;
+@media (max-width:425px) {
+    .reverifi-section {
+        flex-direction: column;
+        padding-left:40px;
+        padding-right:40px;
     }
 
-    .support-items{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto auto;
+    .reverifi-info {
+        width: 100%;
+        margin-bottom: 36px;
     }
 
-    .support-box{
-        margin-bottom: 10px;
-    }
-
-}
-
-@media (max-width:768px) {
-    .reverifi-section{
-        flex-direction:column;
-    }
-    
-    .reverifi-info{
-        width:100%
-    }
-
-    .support-text{
-        text-wrap:wrap;
+    .support-text {
+        text-wrap: wrap;
         text-align: center;
     }
 
-    .support-items{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
+    .support-items {
+        width: 100%;
     }
 }
