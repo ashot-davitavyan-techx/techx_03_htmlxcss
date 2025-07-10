@@ -136,8 +136,8 @@ header nav ul li a {
     background-color: #FFFFFF;
 }
 
-.search-icon{
-    width: clamp(40px, 4vw, 56px);    
+.search-icon {
+    width: clamp(40px, 4vw, 56px);
 }
 
 .styled-searchbar {
@@ -209,7 +209,7 @@ header nav ul li a {
         padding: 0;
     }
 
-    .styled-searchbar::placeholder{
+    .styled-searchbar::placeholder {
         font-size: 12px;
     }
 }
