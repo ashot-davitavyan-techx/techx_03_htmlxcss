@@ -4,38 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="variables.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header-style.css">
+    <link rel="stylesheet" href="listings-search-style.css">
+    <link rel="stylesheet" href="listings-style.css">
     <link rel="stylesheet" href="events-style.css">
     <link rel="stylesheet" href="reverifi-style.css">
-    <link rel="stylesheet" href="listings-style.css">
     <link rel="stylesheet" href="listings-exploring-style.css">
     <link rel="stylesheet" href="address-claim-section-style.css">
     <link rel="stylesheet" href="join-us-section-style.css">
     <link rel="stylesheet" href="footer-style.css">
+    <link rel="stylesheet" href="responsive-hide.css">
     <title>Figma Practice</title>
 </head>
 
 <body>
     <div class="page-container">
-        <header>
-            <div class="menu-container"></div>
-            <div class="header-section section-left">
+        <header class="header">
+            <div class="menu-icon"></div>
+            <div class="header-section">
                 <div class="logo-container"></div>
-                <nav>
+                <nav class="header-navbar tablet-hide">
                     <ul>
-                        <li><a href="#">How we Work</a></li>
-                        <li><a href="#">Find an Agent</a></li>
-                        <li><a href="#">Knowledge Center</a></li>
+                        <li><a class="header-link" href="#">How we Work</a></li>
+                        <li><a class="header-link" href="#">Find an Agent</a></li>
+                        <li><a class="header-link" href="#">Knowledge Center</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="header-section">
-                <nav>
-                    <ul>
-                        <li class="right-li"><a href="#">Sign In</a></li>
-                        <li class="styled-li"><a href="#">Join Now</a></li>
-                    </ul>
-                </nav>
+            <div class="header-section tablet-hide">
+                <button class="unstyled-button"><a class="header-link" href="#">Sign In</a></button>
+                <button class="styled-button"><a class="header-link" href="#">Join Now</a></li>
             </div>
         </header>
         <main>
@@ -43,33 +43,35 @@
                 <div class="section-container">
                     <div class="heading-search-container">
                         <div>
-                            <h2>Search our listings for your next purchase</h2>
+                            <h2 class="styled-h2">Search our listings for your next purchase</h2>
                         </div>
                         <div class="searchbar-container">
                             <img src="media/icons/location_icon.svg" alt="location" width="16px" height="21px"
                                 style="margin-left:14px;">
                             <input class="styled-searchbar" type="text"
                                 placeholder="Enter City, neighbourhood, ZIP, or address">
-                            <img class="search-icon" src="media/images/search_green.png" alt="search_green">
+                            <button class="search-button">
+                                <img class="search-icon" src="media/images/search_green.png" alt="search_green">
+                            </button>
                         </div>
                     </div>
                     <div class="home-container"></div>
                 </div>
             </section>
-            <section">
-                <div class="listings-section-container">
-                    <div class="listing-header-container">
-                        <h3 class="styled-h3">Our Featured Listing</h3>
+            <section class="section featured-section">
+                <div class="featured-section-container">
+                    <div class="featured-header-container">
+                        <h3 class="styled-h3">Our Featured Listings</h3>
                     </div>
-                    <div class="listings-container">
-                        <div class="listing-container">
+                    <div class="featured-listings-container">
+                        <div class="featured-listing-container">
                             <div class="apartment apartment-first">
-                                <div class="status background-orange">New</div>
+                                <div class="listing-type-box background-orange">New</div>
                                 <div class="dork"></div>
                             </div>
                             <div class="listing-info">
                                 <div class="upper-listing">
-                                    <div class="ap-name-address">
+                                    <div class="apartment-name-address">
                                         <h4 class="styled-h4">Apartment#1</h4>
                                         <p>Bronx, NY 10459</p>
                                         <div class="conditions">
@@ -81,27 +83,30 @@
                                         </div>
                                     </div>
                                     <div class="listing-location">
-                                        <img src="media/icons/location_icon.svg" alt="location" width="7.5px" height="10px">
+                                        <img src="media/icons/location_icon.svg" alt="location" width="7.5px"
+                                            height="10px">
                                         <p>1.1km away</p>
                                     </div>
                                 </div>
                                 <div class="lower-listing">
                                     <div class="price-tag">$30,000</div>
                                     <div class="like-share">
-                                        <img src="media/icons/like_icon.svg" alt="like" width="24px" height="24px">
-                                        <img src="media/icons/share_icon.svg" alt="share" width="24px" height="24px">
+                                        <img class="icon-big" src="media/icons/like_icon.svg" alt="like" width="36px"
+                                            height="auto">
+                                        <img class="icon-big" src="media/icons/share_icon_smaller.svg" alt="share"
+                                            width="36px" height="auto">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="listing-container tablet-hide">
+                        <div class="featured-listing-container tablet-hide">
                             <div class="apartment apartment-second">
-                                <div class="status background-green">Rent</div>
+                                <div class="listing-type-box background-green">Rent</div>
                                 <div class="dork"></div>
                             </div>
                             <div class="listing-info">
                                 <div class="upper-listing">
-                                    <div class="ap-name-address">
+                                    <div class="apartment-name-address">
                                         <h4 class="styled-h4">Apartment#1</h4>
                                         <p>Bronx, NY 10459</p>
                                         <div class="conditions">
@@ -113,28 +118,30 @@
                                         </div>
                                     </div>
                                     <div class="listing-location">
-                                        <img src="media/icons/location_icon.svg" alt="location" width="7.5px" height="10px">
+                                        <img src="media/icons/location_icon.svg" alt="location" width="7.5px"
+                                            height="10px">
                                         <p>1.1km away</p>
                                     </div>
                                 </div>
                                 <div class="lower-listing">
                                     <div class="price-tag">$123/Month</div>
                                     <div class="like-share">
-                                        <img src="media/icons/like_icon.svg" alt="like" width="24px" height="24px">
-                                        <img src="media/icons/share_icon.svg" alt="share" width="24px" height="24px">
+                                        <img class="icon-big" src="media/icons/like_icon.svg" alt="like" width="36px"
+                                            height="auto">
+                                        <img class="icon-big" src="media/icons/share_icon_smaller.svg" alt="share"
+                                            width="36px" height="auto">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="listing-container phone-hide">
+                        <div class="featured-listing-container mobile-hide">
                             <div class="apartment apartment-third">
-                                <div class="status background-orange">New</div>
-                                <!-- <div class="status status-green status-second">Sale</div> -->
+                                <div class="listing-type-box background-orange">New</div>
                                 <div class="dork"></div>
                             </div>
                             <div class="listing-info">
                                 <div class="upper-listing">
-                                    <div class="ap-name-address">
+                                    <div class="apartment-name-address">
                                         <h4 class="styled-h4">Apartment#1</h4>
                                         <p>Bronx, NY 10459</p>
                                         <div class="conditions">
@@ -146,15 +153,18 @@
                                         </div>
                                     </div>
                                     <div class="listing-location">
-                                        <img src="media/icons/location_icon.svg" alt="location" width="7.5px" height="10px">
+                                        <img src="media/icons/location_icon.svg" alt="location" width="7.5px"
+                                            height="10px">
                                         <p>1.1km away</p>
                                     </div>
                                 </div>
                                 <div class="lower-listing">
                                     <div class="price-tag">$30,000</div>
                                     <div class="like-share">
-                                        <img src="media/icons/like_icon.svg" alt="like" width="24px" height="24px">
-                                        <img src="media/icons/share_icon.svg" alt="share" width="24px" height="24px">
+                                        <img class="icon-big" src="media/icons/like_icon.svg" alt="like" width="36px"
+                                            height="auto">
+                                        <img class="icon-big" src="media/icons/share_icon_smaller.svg" alt="share"
+                                            width="36px" height="auto">
                                     </div>
                                 </div>
                             </div>
@@ -172,13 +182,13 @@
                     </div>
                     <div class="time-container">
                         <p class="styled-filter">All</p>
-                        <p>Upcoming</p>
-                        <p>Past</p>
+                        <p class="gray-paragraph">Upcoming</p>
+                        <p class="gray-paragraph">Past</p>
                     </div>
                     <div class="events-container">
-                        <div class="arrow-left">
+                        <button class="arrow-button arrow-left">
                             <img src="media/icons/arrow_left_icon.svg" alt="arrow left">
-                        </div>
+                        </button>
                         <div class="event-box">
                             <div class="event-upper event-first">
                                 <div class="event-type background-orange">Personal</div>
@@ -267,10 +277,9 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="arrow-right">
+                        <button class="arrow-button arrow-right">
                             <img src="media/icons/arrow_right_icon.svg" alt="arrow right">
-                        </div>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -278,7 +287,8 @@
                 <div class="reverifi-section">
                     <div class="reverifi-info">
                         <h4 class="reverifi-heading">reverifi<span class="plus-sign">+</span></h4>
-                        <p class="styled-paragraph scalable-paragraph">Search our networks and find your supporting team to complete the
+                        <p class="styled-paragraph scalable-paragraph">Search our networks and find your supporting
+                            team to complete the
                             process</p>
                         <button class="button-see-more">See More</button>
                     </div>
@@ -379,8 +389,10 @@
                             <img src="media/icons/location_icon.svg" alt="location" width="16px" height="21px"
                                 style="margin-left:14px;">
                             <input class="styled-searchbar" type="text" placeholder="Enter your Address">
-                            <img class="search-icon" src="media/images/search_green.png" alt="search_green" height="48px"
-                                width="48px">
+                            <button class="search-button">
+                                <img class="search-icon" src="media/images/search_green.png" alt="search_green"
+                                    height="48px" width="48px">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -410,10 +422,12 @@
                     </div>
                     <div class="links-container">
                         <div class="contact">
-                            <img class="styled-logo" src="media/logos/company_logo_1.png" alt="company logo" width="120px" height="60px">
+                            <img class="styled-logo" src="media/logos/company_logo_1.png" alt="company logo"
+                                width="120px" height="60px">
                             <div>
                                 <div class="company-location">
-                                    <img src="media/icons/location_icon_green.svg" alt="location logo green" width="13px" height="16px">
+                                    <img src="media/icons/location_icon_green.svg" alt="location logo green"
+                                        width="13px" height="16px">
                                     <p class="footer-paragraph">712-427-1242</p>
                                 </div>
                             </div>

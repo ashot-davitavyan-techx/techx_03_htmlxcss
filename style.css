@@ -5,7 +5,27 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-h2 {
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--gray-primary);
+    background-color: var(--white-primary);
+}
+
+.header {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    background: var(--black-primary);
+    padding: 10px 32px;
+}
+
+.page-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.styled-h2 {
     font-size: clamp(28px, 3vw, 50px);
     font-weight: 600;
     letter-spacing: 0px;
@@ -20,32 +40,19 @@ h2 {
     letter-spacing: 0px;
 }
 
-.page-container {
-    max-width: 1440px;
-    margin: 0 auto;
+.styled-h4 {
+    font-weight: 600;
+    font-size: clamp(12px, 2vw, 18px);
+    letter-spacing: 0px;
 }
 
 .section {
     padding: 32px;
 }
 
-.menu-container {
-    display: none;
-}
-
-body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    background-color: #fff;
-}
-
-header {
+.section-container {
     display: flex;
-    height: 80px;
     justify-content: space-between;
-    background: #222222;
-    padding: 10px 32px;
 }
 
 .styled-paragraph {
@@ -54,75 +61,6 @@ header {
     letter-spacing: 0px;
     line-height: 100%;
     text-wrap: wrap;
-}
-
-.header-section {
-    display: flex;
-    align-items: center;
-}
-
-.section-left {
-    gap: clamp(0.5rem, 2vw, 2rem);
-}
-
-.logo-container {
-    background-image: url(media/logos/company_logo_1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 120px;
-    height: 60px;
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-    gap: clamp(0.5rem, 2vw, 2rem);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 100%
-}
-
-header nav ul li a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.right-li {
-    padding: 13px 0;
-}
-
-.styled-li {
-    font-weight: 600;
-    font-size: 13px;
-    letter-spacing: 0px;
-    background: #B2D235;
-    border-radius: 20px;
-    padding: 13px 28px;
-    line-height: 100%;
-}
-
-.home-container {
-    background-image: url(media/images/home_big.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 50%;
-    aspect-ratio: 16 / 9;
-}
-
-.section-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.heading-search-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    gap: 32px;
-    padding-right: 103px;
 }
 
 .searchbar-container {
@@ -134,11 +72,6 @@ header nav ul li a {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     width: 100%;
     background-color: #FFFFFF;
-}
-
-.search-icon {
-    width: clamp(40px, 4vw, 56px);
-    height:auto;
 }
 
 .styled-searchbar {
@@ -157,31 +90,29 @@ header nav ul li a {
     outline: none;
 }
 
+.search-icon {
+    width: clamp(41px, 4vw, 56px);
+    height: auto;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    width: clamp(41px, 4vw, 56px);
+    height: clamp(41px, 4vw, 56px);
+}
+
+.background-green {
+    background-color: var(--green-primary);
+}
+
+.background-orange {
+    background-color: var(--orange-primary);
+}
+
 @media (max-width:768px) {
-    .header-section nav {
-        display: none;
-    }
-
-    .logo-container {
-        width: 100px;
-        height: 50px;
-    }
-
-    .menu-container {
-        display: block;
-        background-image: url(media/images/menu.png);
-        width: 24px;
-        height: 16px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        left: 25px;
-    }
-
-    header {
-        justify-content: center;
-        align-items: center;
-        position: relative;
+    .styled-h4 {
+        font-size: clamp(12px, 3vw, 18px);
     }
 
     .section-container {
@@ -189,10 +120,6 @@ header nav ul li a {
         flex-direction: column;
         align-items: center;
         gap: 30px;
-    }
-
-    .home-container {
-        width: 100%;
     }
 
     .search-icon {
@@ -204,13 +131,13 @@ header nav ul li a {
         padding: 3px 6px;
     }
 
-    .heading-search-container {
-        width: 100%;
-        align-items: center;
-        padding: 0;
-    }
-
     .styled-searchbar::placeholder {
         font-size: 12px;
+    }
+}
+
+@media (max-width:425px) {
+    .styled-h4 {
+        font-size: 18px;
     }
 }

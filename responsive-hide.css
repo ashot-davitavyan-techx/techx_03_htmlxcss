@@ -1,0 +1,14 @@
+/* This file's purpose is to hide the elements that need to be hidden during switching to mobile/tablet versions of the page*/
+/* Also i was having issues with other styles rewriting the display:none of some elements, including this file latest fixes that issue */
+
+@media(max-width:768px) {
+    .tablet-hide {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .mobile-hide {
+        display: none;
+    }
+}

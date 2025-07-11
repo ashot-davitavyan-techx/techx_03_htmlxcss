@@ -1,0 +1,12 @@
+:root {
+    --primary-box-vw: 27vw;
+    --secondary-box-vw: 40vw;
+}
+
+:root {
+    --white-primary: #FFFFFF;
+    --black-primary: #222222;
+    --green-primary: #B2D235;
+    --gray-primary: #333;
+    --orange-primary: #FE5D26;
+}

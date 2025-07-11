@@ -1,0 +1,29 @@
+.home-container {
+    background-image: url(media/images/home_big.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50%;
+    aspect-ratio: 16 / 9;
+}
+
+.heading-search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    gap: 32px;
+    padding-right: 103px;
+}
+
+@media(max-width:768px) {
+    .home-container {
+        width: 100%;
+    }
+
+    .heading-search-container {
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+}
