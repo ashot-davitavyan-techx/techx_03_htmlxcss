@@ -35,6 +35,7 @@
 
 .support-text {
     text-align: center;
+    text-wrap: nowrap;
     font-size: clamp(12px, 1.7vw, 18px);
 }
 
@@ -54,11 +55,25 @@
     width: fit-content
 }
 
+@media (max-width:768px){
+    .tablet-hide-reverifi{
+        display:none;
+    }
+
+    .support-items{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (max-width:425px) {
     .reverifi-section {
         flex-direction: column;
         padding-left:40px;
         padding-right:40px;
+    }
+
+    .tablet-hide-reverifi{
+        display:flex;
     }
 
     .reverifi-info {
@@ -73,5 +88,6 @@
 
     .support-items {
         width: 100%;
+        grid-template-columns: repeat(3, 1fr);
     }
 }

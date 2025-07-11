@@ -40,8 +40,20 @@
     width: clamp(190px, var(--primary-box-vw), 380px);
 }
 
-.apartment1 {
-    background-image: url(images/Apartment1.png);
+.apartment-first {
+    background-image: url(media/images/apartment1.jpg);
+}
+
+.apartment-second {
+    background-image: url(media/images/apartment2.jpg);
+}
+
+.apartment-third {
+    background-image: url(media/images/apartment3.jpg);
+}
+
+
+.apartment {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -52,7 +64,7 @@
     border-top-right-radius: 5px;
 }
 
-.apartment1 .status {
+.status {
     left: 16px;
     top: 16px;
     padding: 4px 19px;
@@ -60,14 +72,21 @@
     font-weight: 400;
     font-size: 10px;
     letter-spacing: 0px;
-    background-color: #FE5D26;
     border-radius: 4px;
     color: #FFFFFF;
 }
 
+.background-green {
+    background-color: #B2D235;
+}
+
+.background-orange {
+    background-color: #FE5D26;
+}
+
 .dork {
     border-radius: 50%;
-    background-image: url(images/dork.png);
+    background-image: url(media/images/dork.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -138,7 +157,7 @@
     }
 
 
-    .apartment1 .status {
+    .apartment .status {
         padding: 2px 15px;
         font-size: 9px;
     }
@@ -151,14 +170,14 @@
         width: clamp(185px, var(--secondary-box-vw), 380px);
     }
 
-    .apartment1 {
+    .apartment {
         width: clamp(185px, var(--secondary-box-vw), 380px);
     }
 }
 
 @media (max-width: 425px) {
 
-    .apartment1 .status {
+    .apartment .status {
         padding: 4px 18px;
         font-size: 10px;
     }
@@ -171,11 +190,11 @@
         width: 100%;
     }
 
-    .apartment1 {
+    .apartment {
         width: 100%;
     }
 
-    .apartment1 .status {
+    .apartment .status {
         padding: 4px 18px;
         font-size: 9px;
     }
@@ -185,7 +204,7 @@
     }
 
     .styled-h4 {
-        font-size:18px;
+        font-size: 18px;
     }
 
     .ap-name-address p {

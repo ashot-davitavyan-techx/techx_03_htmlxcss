@@ -27,7 +27,7 @@
 
 .listing-big {
     position: relative;
-    background-image: url(images/New_York.jpg);
+    background-image: url(media/images/New_York.jpg);
     background-position: center;
     width: clamp(258px, 34.5vw, 500px);
     aspect-ratio: 500/532;
@@ -37,12 +37,36 @@
 
 .listing-small {
     position: relative;
-    background-image: url(images/California.jpg);
     background-position: center;
     width: clamp(128px, 17.5vw, 258px);
     aspect-ratio: 258/250;
     border-radius: 20px;
 }
+
+.listing-california {
+    background-image: url(media/images/California.jpg);
+}
+
+.listing-florida {
+    background-image: url(media/images/Florida.jpg);
+}
+
+.listing-hawaii {
+    background-image: url(media/images/Hawaii.jpg);
+}
+
+.listing-alaska {
+    background-image: url(media/images/Alaska.jpg);
+}
+
+.listing-new-jersey {
+    background-image: url(media/images/New_Jersey.jpg);
+}
+
+.listing-georgia {
+    background-image: url(media/images/Georgia.jpg);
+}
+
 
 .listing-small .listing-information h4 {
     font-size: clamp(12px, 1.5vw, 24px);

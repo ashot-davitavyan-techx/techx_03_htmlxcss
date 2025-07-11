@@ -58,7 +58,6 @@
 }
 
 .event-type {
-    background: #FE5D26;
     border-radius: 4px;
     color: #FFFFFF;
     font-size: 10px;
@@ -71,7 +70,6 @@
 }
 
 .event-date {
-    background: #B2D235;
     position: absolute;
     right: 15px;
     border-radius: 3px;
@@ -85,12 +83,24 @@
     font-size: clamp(12px, 1.5vw, 18px);
 }
 
+.event-first{
+    background-image: url(media/images/event_image_1.jpg);
+}
+.event-second{
+    background-image: url(media/images/event_image_2.jpg);
+}
+.event-third{
+    background-image: url(media/images/event_image_3.jpg);
+}
+.event-fourth{
+    background-image: url(media/images/event_image_4.jpg);
+}
+
 .event-upper {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     display: flex;
     position: relative;
-    background-image: url(images/event_image_1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

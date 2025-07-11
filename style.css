@@ -66,7 +66,7 @@ header {
 }
 
 .logo-container {
-    background-image: url(images/company_logo_1.png);
+    background-image: url(media/logos/company_logo_1.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -103,7 +103,7 @@ header nav ul li a {
 }
 
 .home-container {
-    background-image: url(images/home_big.png);
+    background-image: url(media/images/home_big.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -138,6 +138,7 @@ header nav ul li a {
 
 .search-icon {
     width: clamp(40px, 4vw, 56px);
+    height:auto;
 }
 
 .styled-searchbar {
@@ -168,7 +169,7 @@ header nav ul li a {
 
     .menu-container {
         display: block;
-        background-image: url(images/menu.png);
+        background-image: url(media/images/menu.png);
         width: 24px;
         height: 16px;
         background-repeat: no-repeat;

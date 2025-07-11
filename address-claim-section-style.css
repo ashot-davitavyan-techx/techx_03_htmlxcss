@@ -1,33 +1,35 @@
-.address-claim-section{
-    display:flex;
-    background-image: url(images/map-large.png);
+.address-claim-section {
+    display: flex;
+    background-image: url(media/images/map-large.png);
+    background-repeat: no-repeat;
+    background-size:cover;
     padding: 66px 0;
     justify-content: center;
 }
 
-.address-claim-form{
-    display:flex;
-    flex-direction:column;
+.address-claim-form {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap:32px;
+    gap: 32px;
     width: 400px;
 }
 
-.address-claim-heading{
+.address-claim-heading {
     font-weight: 600;
     font-size: 32px;
 }
 
-@media(max-width:768px){
-    .address-claim-section{
-        background-image:url(images/map_small.jpg);
-        background-size:cover;
+@media(max-width:768px) {
+    .address-claim-section {
+        background-image: url(media/images/map_small.jpg);
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         padding: 225px 0;
     }
 
-    .address-claim-form{
-        width:90%;
+    .address-claim-form {
+        width: 90%;
     }
 }
