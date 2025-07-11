@@ -16,7 +16,7 @@
 }
 
 .listings-exploring-section {
-    background: #FAFAFA;
+    background: var(--white-secondary);
     padding: 32px 36px;
 }
 
@@ -84,14 +84,14 @@
 }
 
 .listing-information h4 {
-    color: #FFFFFF;
+    color: var(--white-primary);
     font-size: clamp(16px, 2vw, 32px);
 }
 
 .listing-information p {
     font-size: 18px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: var(--white-primary);
 }
 
 .listing-overlay {
@@ -105,7 +105,7 @@
 }
 
 .styled-number {
-    color: #B2D235;
+    color: var(--green-primary);
 }
 
 @media(max-width: 768px) {

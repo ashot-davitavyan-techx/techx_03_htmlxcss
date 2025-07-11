@@ -71,7 +71,7 @@ body {
     border-radius: 35px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: var(--white-primary);
 }
 
 .styled-searchbar {

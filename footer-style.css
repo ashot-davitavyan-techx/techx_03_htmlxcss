@@ -1,14 +1,14 @@
 .footer-container {
     padding-top: 32px;
-    background: #F5F5F5;
+    background: var(--white-secondary);
 }
 
 .lower-footer {
     display: flex;
     justify-content: center;
     padding: 32px 0;
-    background: #222222;
-    color: #FFFFFF;
+    background: var(--black-primary);
+    color: var(--white-primary);
     font-size: 16px;
 }
 
@@ -46,14 +46,14 @@
 }
 
 .styled-heading {
-    color: #B2D235;
+    color: var(--green-primary);
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 30px;
 }
 
 .styled-link {
-    color: #6F7076;
+    color: var(--gray-pri);
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
@@ -69,7 +69,7 @@
     font-size: 16px;
     font-weight: 400;
     margin-left: 7.5px;
-    color: #6F7076;
+    color: var(--gray-pri);
 }
 
 .contact div {
@@ -96,15 +96,15 @@
 .subscription-field {
     width: fit-content;
     border-radius: 28px;
-    background: #FFFFFF;
+    background: var(--white-primary);
 
 }
 
 .styled-button {
     border-radius: 28px;
     padding: 11px 28px;
-    background: #B2D235;
-    color: #FFFFFF;
+    background: var(--green-primary);
+    color: var(--white-primary);
     border: none;
 }
 

@@ -1,5 +1,5 @@
 .plus-sign {
-    color: #B2D235;
+    color: var(--green-primary);
 }
 
 .reverifi-info {
@@ -47,9 +47,9 @@
 .button-see-more {
     border-radius: 20px;
     font-size: clamp(10px, 1.5vw, 16px);
-    color: #FFFFFF;
+    color: var(--white-primary);
     padding: 10px 20px;
-    background-color: #B2D235;
+    background-color: var(--green-primary);
     border: none;
     margin-top: 16px;
     width: fit-content

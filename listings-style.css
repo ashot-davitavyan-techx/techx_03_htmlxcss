@@ -89,7 +89,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 8px;
-    border-bottom: 1px solid #D8D8D8;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .conditions {
@@ -110,7 +110,7 @@
     font-size: 12px;
     letter-spacing: 0px;
     line-height: 100%;
-    color: #222222;
+    color: var(--black-primary);
 }
 
 .lower-listing {
