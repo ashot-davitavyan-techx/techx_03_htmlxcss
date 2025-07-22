@@ -1,0 +1,139 @@
+.footer-container {
+    background: var(--white-secondary);
+    padding-top: 32px;
+}
+
+.lower-footer {
+    background: var(--black-primary);
+    color: var(--white-primary);
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.styled-logo {
+    margin-bottom: 15px;
+}
+
+.upper-footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.round-button {
+    background-position: center;
+    border-radius: 50%;
+    border: none;
+    height: 30px;
+    width: 30px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 32px;
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.styled-heading {
+    color: var(--green-primary);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.styled-link {
+    color: var(--gray-pri);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    text-decoration: none;
+}
+
+.link-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-paragraph {
+    color: var(--gray-pri);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 7.5px;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+}
+
+.facebook-button {
+    background-image: url(media/icons/facebook_icon.png);
+}
+
+.instagram-button {
+    background-image: url(media/icons/instagram_icon.png);
+}
+
+.youtube-button {
+    background-image: url(media/icons/youtube_icon.png);
+}
+
+.linkedin-button {
+    background-image: url(media/icons/linkedin_icon.png);
+}
+
+.subscription-field {
+    background: var(--white-primary);
+    border-radius: 28px;
+    width: fit-content;
+}
+
+.styled-button {
+    background: var(--green-primary);
+    border-radius: 28px;
+    border: none;
+    color: var(--white-primary);
+    padding: 11px 28px;
+}
+
+.styled-input {
+    border-radius: 28px;
+    border: none;
+    padding: 11px 15px;
+}
+
+.styled-input:focus {
+    outline: none;
+}
+
+.styled-input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+@media(max-width:768px) {
+    .links-container {
+        flex-direction: column;
+        padding-left: 15px;
+    }
+
+    .contact {
+        margin-bottom: 30px;
+    }
+}

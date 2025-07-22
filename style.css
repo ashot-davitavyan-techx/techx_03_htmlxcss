@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white-primary);
+    color: var(--gray-primary);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.header {
+    background: var(--black-primary);
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 10px 32px;
+}
+
+.page-container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.styled-h2 {
+    font-size: clamp(28px, 3vw, 50px);
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 100%;
+    text-wrap: wrap;
+}
+
+.styled-h3 {
+    font-size: clamp(22px, 2.5vw, 32px);
+    font-weight: 600;
+    letter-spacing: 0px;
+    letter-spacing: 0px;
+}
+
+.styled-h4 {
+    font-size: clamp(12px, 2vw, 18px);
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+.section {
+    padding: 32px;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.styled-paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 100%;
+    text-wrap: wrap;
+}
+
+.searchbar-container {
+    align-items: center;
+    background-color: var(--white-primary);
+    border-radius: 35px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 10px;
+    width: 100%;
+}
+
+.styled-searchbar {
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.styled-searchbar::placeholder {
+    font-size: 16px;
+}
+
+.styled-searchbar:focus {
+    outline: none;
+}
+
+.search-icon {
+    height: auto;
+    width: clamp(41px, 4vw, 56px);
+}
+
+.search-button {
+    background: none;
+    border: none;
+    height: clamp(41px, 4vw, 56px);
+    width: clamp(41px, 4vw, 56px);
+}
+
+.background-green {
+    background-color: var(--green-primary);
+}
+
+.background-orange {
+    background-color: var(--orange-primary);
+}
+
+@media (max-width:768px) {
+    .styled-h4 {
+        font-size: clamp(12px, 3vw, 18px);
+    }
+
+    .section-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .search-icon {
+        height: 41px;
+        width: 41px;
+    }
+
+    .searchbar-container {
+        padding: 3px 6px;
+    }
+
+    .styled-searchbar::placeholder {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:425px) {
+    .styled-h4 {
+        font-size: 18px;
+    }
+}

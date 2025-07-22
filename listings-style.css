@@ -1,0 +1,178 @@
+.featured-section{
+    padding: 32px 0;
+}
+
+.featured-section-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-listings-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.featured-header-container {
+    margin-bottom: 32px;
+}
+
+.apartment-name-address p {
+    font-size: clamp(10px, 1.5vw, 14px);
+    opacity: 50%;
+}
+
+.apartment-name-address {
+    margin-left: 15px;
+}
+
+.featured-listing-container {
+    width: clamp(190px, var(--primary-box-vw), 380px);
+}
+
+.apartment-first {
+    background-image: url(media/images/apartment1.jpg);
+}
+
+.apartment-second {
+    background-image: url(media/images/apartment2.jpg);
+}
+
+.apartment-third {
+    background-image: url(media/images/apartment3.jpg);
+}
+
+.apartment {
+    aspect-ratio: 380/185;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    width:100%;
+}
+
+.listing-type-box {
+    border-radius: 4px;
+    color: var(--white-primary);
+    font-size: 10px;
+    font-weight: 400;
+    left: 16px;
+    letter-spacing: 0px;
+    padding: 4px 19px;
+    position: absolute;
+    top: 16px;
+}
+
+.guy-with-glasses {
+    background-image: url(media/images/dork.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    bottom: 16px;
+    height: 40px;
+    position: absolute;
+    right: 16px;
+    width: 40px;
+}
+
+.listing-info {
+    margin-top: 8px;
+}
+
+.upper-listing {
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.conditions {
+    display: flex;
+    gap: 15px;
+}
+
+.listing-location {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+
+.listing-location p {
+    color: var(--black-primary);
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 100%;
+    opacity: 50%;
+}
+
+.lower-listing {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.price-tag {
+    font-size: clamp(12px, 2vw, 18px);
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+@media (max-width: 768px) {
+    .apartment-name-address p {
+        font-size: clamp(10px, 2vw, 14px);
+    }
+
+    .apartment .status {
+        font-size: 9px;
+        padding: 2px 15px;
+    }
+
+    .price-tag {
+        font-size: clamp(12px, 3vw, 18px);
+    }
+
+    .featured-listing-container {
+        width: clamp(185px, var(--secondary-box-vw), 380px);
+    }
+
+    .apartment {
+        width: clamp(185px, var(--secondary-box-vw), 380px);
+    }
+}
+
+@media (max-width: 425px) {
+
+    .apartment .status {
+        font-size: 10px;
+        padding: 4px 18px;
+    }
+
+    .featured-listing-container {
+        width: 100%;
+    }
+
+    .apartment {
+        width: 100%;
+    }
+
+    .apartment .status {
+        font-size: 9px;
+        padding: 4px 18px;
+    }
+
+    .price-tag {
+        font-size: 18px;
+    }
+
+    .apartment-name-address p {
+        font-size: 14px;
+    }
+}

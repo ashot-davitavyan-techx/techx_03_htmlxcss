@@ -1,0 +1,167 @@
+.listing-dots {
+    display: none;
+    z-index: 1;
+}
+
+.listings-grid {
+    display: grid;
+    gap: clamp(16px, 2vw, 32px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.listings-exploring-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.listings-exploring-section {
+    background: var(--white-secondary);
+    padding: 32px 36px;
+}
+
+.listings-exploring-header h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.listing-big {
+    aspect-ratio: 500/532;
+    background-image: url(media/images/New_York.jpg);
+    background-position: center;
+    border-radius: 20px;
+    grid-row: span 2;
+    position: relative;
+    width: clamp(258px, 34.5vw, 500px);
+}
+
+.listing-small {
+    aspect-ratio: 258/250;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+    width: clamp(128px, 17.5vw, 258px);
+}
+
+.listing-california {
+    background-image: url(media/images/California.jpg);
+}
+
+.listing-florida {
+    background-image: url(media/images/Florida.jpg);
+}
+
+.listing-hawaii {
+    background-image: url(media/images/Hawaii.jpg);
+}
+
+.listing-alaska {
+    background-image: url(media/images/Alaska.jpg);
+}
+
+.listing-new-jersey {
+    background-image: url(media/images/New_Jersey.jpg);
+}
+
+.listing-georgia {
+    background-image: url(media/images/Georgia.jpg);
+}
+
+
+.listing-small .listing-information h4 {
+    font-size: clamp(12px, 1.5vw, 24px);
+}
+
+.listing-small .listing-information p {
+    font-size: clamp(8px, 1.5vw, 16px);
+}
+
+.listing-information {
+    bottom: 6%;
+    left: 6.4%;
+    position: absolute;
+    z-index: 1;
+}
+
+.listing-information h4 {
+    color: var(--white-primary);
+    font-size: clamp(16px, 2vw, 32px);
+}
+
+.listing-information p {
+    color: var(--white-primary);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.listing-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.styled-number {
+    color: var(--green-primary);
+}
+
+@media(max-width: 768px) {
+    .listings-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .listing-big {
+        display: none;
+    }
+
+    .listing-small{
+        width:auto;
+    }
+}
+
+@media(max-width: 425px) {
+    .listings-exploring-section {
+        padding: 32px 0;
+    }
+
+    .listings-grid {
+        display: flex;
+        max-height: 532px;
+    }
+
+    .listing-small {
+        display: none;
+    }
+
+    .listing-big {
+        align-items: end;
+        aspect-ratio: 9/16;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0px;
+        display: flex;
+        width: 100%;
+    }
+
+    .listing-information h4 {
+        font-size: 32px;
+    }
+
+    .listing-information p {
+        font-size: 18px;
+    }
+
+    .listing-overlay {
+        border-radius: 0px;
+    }
+
+    .listing-dots {
+        display: flex;
+        justify-content: center;
+        padding-bottom:10px;
+        width: 100%;
+    }
+}

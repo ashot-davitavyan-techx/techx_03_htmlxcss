@@ -1,0 +1,93 @@
+.plus-sign {
+  color: var(--green-primary);
+}
+
+.reverifi-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 40%;
+}
+
+.scalable-paragraph {
+  font-size: clamp(12px, 1.7vw, 18px);
+}
+
+.reverifi-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.support-items {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  width: 50%;
+}
+
+.support-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.support-text {
+  font-size: clamp(12px, 1.7vw, 18px);
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.reverifi-heading {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 600;
+}
+
+.button-see-more {
+  background-color: var(--green-primary);
+  border-radius: 20px;
+  border: none;
+  color: var(--white-primary);
+  font-size: clamp(10px, 1.5vw, 16px);
+  margin-top: 16px;
+  padding: 10px 20px;
+  width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .tablet-hide-reverifi {
+    display: none;
+  }
+
+  .support-items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  .reverifi-section {
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .tablet-hide-reverifi {
+    display: flex;
+  }
+
+  .reverifi-info {
+    margin-bottom: 36px;
+    width: 100%;
+  }
+
+  .support-text {
+    text-align: center;
+    text-wrap: wrap;
+  }
+
+  .support-items {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+}
