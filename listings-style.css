@@ -3,9 +3,9 @@
 }
 
 .featured-section-container {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .featured-listings-container {
@@ -19,8 +19,8 @@
 }
 
 .apartment-name-address p {
-    opacity: 50%;
     font-size: clamp(10px, 1.5vw, 14px);
+    opacity: 50%;
 }
 
 .apartment-name-address {
@@ -44,39 +44,39 @@
 }
 
 .apartment {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width:100%;
     aspect-ratio: 380/185;
-    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    position: relative;
+    width:100%;
 }
 
 .listing-type-box {
-    left: 16px;
-    top: 16px;
-    padding: 4px 19px;
-    position: absolute;
-    font-weight: 400;
-    font-size: 10px;
-    letter-spacing: 0px;
     border-radius: 4px;
     color: var(--white-primary);
+    font-size: 10px;
+    font-weight: 400;
+    left: 16px;
+    letter-spacing: 0px;
+    padding: 4px 19px;
+    position: absolute;
+    top: 16px;
 }
 
-.dork {
-    border-radius: 50%;
+.guy-with-glasses {
     background-image: url(media/images/dork.png);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
     bottom: 16px;
+    height: 40px;
+    position: absolute;
     right: 16px;
     width: 40px;
-    height: 40px;
 }
 
 .listing-info {
@@ -84,12 +84,12 @@
 }
 
 .upper-listing {
+    border-bottom: 1px solid var(--border-color);
     display: flex;
-    position: relative;
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 8px;
-    border-bottom: 1px solid var(--border-color);
+    position: relative;
 }
 
 .conditions {
@@ -99,18 +99,18 @@
 
 .listing-location {
     display: flex;
+    gap: 8px;
     position: absolute;
     right: 5px;
     top: 0;
-    gap: 8px;
 }
 
 .listing-location p {
-    opacity: 50%;
+    color: var(--black-primary);
     font-size: 12px;
     letter-spacing: 0px;
     line-height: 100%;
-    color: var(--black-primary);
+    opacity: 50%;
 }
 
 .lower-listing {
@@ -120,8 +120,8 @@
 }
 
 .price-tag {
-    font-weight: 600;
     font-size: clamp(12px, 2vw, 18px);
+    font-weight: 600;
     letter-spacing: 0px;
 }
 
@@ -131,8 +131,8 @@
     }
 
     .apartment .status {
-        padding: 2px 15px;
         font-size: 9px;
+        padding: 2px 15px;
     }
 
     .price-tag {
@@ -151,8 +151,8 @@
 @media (max-width: 425px) {
 
     .apartment .status {
-        padding: 4px 18px;
         font-size: 10px;
+        padding: 4px 18px;
     }
 
     .featured-listing-container {
@@ -164,8 +164,8 @@
     }
 
     .apartment .status {
-        padding: 4px 18px;
         font-size: 9px;
+        padding: 4px 18px;
     }
 
     .price-tag {

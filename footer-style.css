@@ -1,15 +1,15 @@
 .footer-container {
-    padding-top: 32px;
     background: var(--white-secondary);
+    padding-top: 32px;
 }
 
 .lower-footer {
-    display: flex;
-    justify-content: center;
-    padding: 32px 0;
     background: var(--black-primary);
     color: var(--white-primary);
+    display: flex;
     font-size: 16px;
+    justify-content: center;
+    padding: 32px 0;
 }
 
 .styled-logo {
@@ -17,26 +17,25 @@
 }
 
 .upper-footer {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .round-button {
-    width: 30px;
-    height: 30px;
     background-position: center;
-    border: none;
     border-radius: 50%;
+    border: none;
+    height: 30px;
+    width: 30px;
 }
 
 .links-container {
     display: flex;
-    width: 100%;
     justify-content: space-around;
-    margin-top: 32px;
     margin-bottom: 40px;
-
+    margin-top: 32px;
+    width: 100%;
 }
 
 .contact {
@@ -56,8 +55,8 @@
     color: var(--gray-pri);
     font-size: 14px;
     font-weight: 400;
-    text-decoration: none;
     margin-bottom: 14px;
+    text-decoration: none;
 }
 
 .link-box {
@@ -66,15 +65,15 @@
 }
 
 .footer-paragraph {
+    color: var(--gray-pri);
     font-size: 16px;
     font-weight: 400;
     margin-left: 7.5px;
-    color: var(--gray-pri);
 }
 
-.contact div {
-    display: flex;
+.contact-box {
     align-items: center;
+    display: flex;
 }
 
 .facebook-button {
@@ -94,24 +93,23 @@
 }
 
 .subscription-field {
-    width: fit-content;
-    border-radius: 28px;
     background: var(--white-primary);
-
+    border-radius: 28px;
+    width: fit-content;
 }
 
 .styled-button {
-    border-radius: 28px;
-    padding: 11px 28px;
     background: var(--green-primary);
-    color: var(--white-primary);
+    border-radius: 28px;
     border: none;
+    color: var(--white-primary);
+    padding: 11px 28px;
 }
 
 .styled-input {
-    padding: 11px 15px;
-    border: none;
     border-radius: 28px;
+    border: none;
+    padding: 11px 15px;
 }
 
 .styled-input:focus {
@@ -119,14 +117,14 @@
 }
 
 .styled-input::placeholder {
-    font-weight: 400;
     font-size: 12px;
+    font-weight: 400;
 }
 
 .social-links {
     display: flex;
-    justify-content: center;
     gap: 16px;
+    justify-content: center;
 }
 
 @media(max-width:768px) {

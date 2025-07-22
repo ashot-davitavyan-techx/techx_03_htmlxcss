@@ -24,19 +24,19 @@
 }
 
 .arrow-button {
+    background: none;
+    border: none;
     position: absolute;
     top: 45%;
     z-index: 1;
-    background: none;
-    border: none;
 }
 
 .event-box {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
     width: clamp(230px, 22.5vw, 320px);
 }
 
@@ -53,8 +53,8 @@
 }
 
 .styled-filter {
-    color: var(--green-primary);
     border-bottom: 1px solid var(--green-primary);
+    color: var(--green-primary);
     font-size: 16px;
 }
 
@@ -63,21 +63,21 @@
     color: var(--white-primary);
     font-size: 10px;
     font-weight: 400;
+    left: 16px;
     letter-spacing: 0px;
     padding: 5px 10px;
     position: absolute;
-    left: 16px;
     top: 16px;
 }
 
 .event-date {
+    border-radius: 3px;
+    color: var(--white-primary);
+    font-size: clamp(16px, 2vw, 22px);
+    padding: 4px 12px 5px 12px;
     position: absolute;
     right: 15px;
-    border-radius: 3px;
-    font-size: clamp(16px, 2vw, 22px);
-    color: var(--white-primary);
     text-align: center;
-    padding: 4px 12px 5px 12px;
 }
 
 .event-month {
@@ -101,15 +101,15 @@
 }
 
 .event-upper {
+    aspect-ratio: 320/230;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     display: flex;
     position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     width: clamp(230px, 22.5vw, 320px);
-    aspect-ratio: 320/230;
 }
 
 .actions {
@@ -119,14 +119,14 @@
 
 .event-lower {
     display: flex;
-    padding: 15px 16px 30px 16px;
     justify-content: space-between;
+    padding: 15px 16px 30px 16px;
     position: relative;
 }
 
 .people-count {
-    position: absolute;
     bottom: 16px;
+    position: absolute;
     right: 16px;
 }
 
@@ -136,8 +136,8 @@
 }
 
 .event-info p {
-    opacity: 50%;
     font-size: 12px;
+    opacity: 50%;
 }
 
 @media(max-width:1024px) {

@@ -1,15 +1,15 @@
 .join-us-section {
+    background-color: var(--green-primary);
     display: flex;
     justify-content: center;
-    background-color: var(--green-primary);
     padding: 18px 0;
 }
 
 .join-us-box {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     width: clamp(640px, 90vw, 880px);
-    justify-content: space-around
 }
 
 .content-left {
@@ -17,23 +17,23 @@
 }
 
 .content-left p {
-    font-weight: 600;
-    font-size: 22px;
     color: var(--white-primary);
+    font-size: 22px;
+    font-weight: 600;
     margin-right: 8px;
 }
 
 .join-us-button {
     border-radius: 28px;
+    border: none;
     font-size: 12px;
     padding: 12px 38px;
-    border: none;
 }
 
 @media(max-width:764px) {
     .join-us-box {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
 
     .content-left p {

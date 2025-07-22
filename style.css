@@ -1,48 +1,48 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    background-color: var(--white-primary);
+    color: var(--gray-primary);
     font-size: 16px;
     line-height: 1.5;
-    color: var(--gray-primary);
-    background-color: var(--white-primary);
 }
 
 .header {
+    background: var(--black-primary);
     display: flex;
     height: 80px;
     justify-content: space-between;
-    background: var(--black-primary);
     padding: 10px 32px;
 }
 
 .page-container {
-    max-width: 1440px;
     margin: 0 auto;
+    max-width: 1440px;
 }
 
 .styled-h2 {
     font-size: clamp(28px, 3vw, 50px);
     font-weight: 600;
     letter-spacing: 0px;
-    text-wrap: wrap;
     line-height: 100%;
+    text-wrap: wrap;
 }
 
 .styled-h3 {
     font-size: clamp(22px, 2.5vw, 32px);
-    letter-spacing: 0px;
     font-weight: 600;
+    letter-spacing: 0px;
     letter-spacing: 0px;
 }
 
 .styled-h4 {
-    font-weight: 600;
     font-size: clamp(12px, 2vw, 18px);
+    font-weight: 600;
     letter-spacing: 0px;
 }
 
@@ -64,22 +64,22 @@ body {
 }
 
 .searchbar-container {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 7px 10px;
+    background-color: var(--white-primary);
     border-radius: 35px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 10px;
     width: 100%;
-    background-color: var(--white-primary);
 }
 
 .styled-searchbar {
     border: none;
-    width: 100%;
-    padding: 10px;
     font-size: 16px;
+    padding: 10px;
     text-overflow: ellipsis;
+    width: 100%;
 }
 
 .styled-searchbar::placeholder {
@@ -91,15 +91,15 @@ body {
 }
 
 .search-icon {
-    width: clamp(41px, 4vw, 56px);
     height: auto;
+    width: clamp(41px, 4vw, 56px);
 }
 
 .search-button {
     background: none;
     border: none;
-    width: clamp(41px, 4vw, 56px);
     height: clamp(41px, 4vw, 56px);
+    width: clamp(41px, 4vw, 56px);
 }
 
 .background-green {
@@ -116,9 +116,9 @@ body {
     }
 
     .section-container {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 30px;
     }
 
